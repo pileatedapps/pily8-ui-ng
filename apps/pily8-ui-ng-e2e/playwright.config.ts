@@ -27,7 +27,7 @@ export default defineConfig({
   webServer: {
     command: 'npx nx run pily8-ui-ng:serve',
     url: 'http://localhost:4200',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !process.env['CI'],
     cwd: workspaceRoot,
   },
   projects: [

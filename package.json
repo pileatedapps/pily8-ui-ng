@@ -2,7 +2,12 @@
   "name": "@pily8-ui-ng/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "npx nx serve pily8-ui-ng",
+    "test": "npx nx test pily8-ui-ng",
+    "test:ci": "npx nx test pily8-ui-ng --ci --max-workers=50%",
+    "e2e": "nx run pily8-ui-ng-e2e:e2e"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.0.0",
